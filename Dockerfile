@@ -1,5 +1,5 @@
 # Stage 1: Build the app with Maven
-FROM maven:3.5.6-jdk-21 AS build
+FROM maven:3.9.6-amazoncorretto-21 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests

@@ -33,8 +33,8 @@ public class SecurityConfig {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/login", "/api/products").permitAll()
-                        .requestMatchers("/api/addproduct", "/api/delete/**", "/api/products/{id}", "/", "/h2-console").authenticated()
+                        .requestMatchers("/api/login", "/api/products", "/h2-console/**").permitAll()
+                        .requestMatchers("/api/addproduct", "/api/delete/**", "/api/products/{id}", "/").authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .formLogin(form -> form.disable())
