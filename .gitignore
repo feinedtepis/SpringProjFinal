@@ -1,0 +1,26 @@
+# Java
+*.class
+*.jar
+*.war
+*.log
+
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+logs/
+*.tmp
