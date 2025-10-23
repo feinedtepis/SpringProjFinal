@@ -45,7 +45,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("https://spring-frontend.onrender.com")); // Adjust to your frontend origin
+        configuration.setAllowedOrigins(List.of("https://springprojfrontend.onrender.com")); // Adjust to your frontend origin
         configuration.setAllowedMethods(List.of("GET", "POST", "OPTIONS", "DELETE"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
