@@ -1,1 +1,1 @@
-Learned spring boot just to see how interprises code websites
+Learned spring boot just to see how enterprises code websites
